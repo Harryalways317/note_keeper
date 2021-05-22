@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "754579776633",
+    "project_id": "note-keeper-58098",
+    "storage_bucket": "note-keeper-58098.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:754579776633:android:262f577beff5bac7d2a0a8",
+        "android_client_info": {
+          "package_name": "com.harishvadaparty.note_keeper"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "754579776633-4ln9m3ck0pflstv8a0jqicar0sbac750.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.harishvadaparty.note_keeper",
+            "certificate_hash": "110c0aba3abb570bc27147f17d66921f64305a99"
+          }
+        },
+        {
+          "client_id": "754579776633-uq281le806n3frav5o90135sbjknsh57.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCp37dFhyl3T1yVdmXzi_SVq2UzRW11eWU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "754579776633-uq281le806n3frav5o90135sbjknsh57.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
