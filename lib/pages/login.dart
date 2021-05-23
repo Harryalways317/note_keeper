@@ -21,7 +21,16 @@ class _LoginPageState extends State<LoginPage> {
                 ),
               ),
             ),
-            Text("Create and Manage Notes"),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Text(
+                "Create and Manage Notes",
+                style: TextStyle(
+                    fontSize: 36,
+                    fontFamily: "lato",
+                    fontWeight: FontWeight.bold),
+              ),
+            ),
             ElevatedButton(
               onPressed: null,
               child: Row(

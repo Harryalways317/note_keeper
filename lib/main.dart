@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
-import "package:firebase_core/firebase_core.dart"
+import "package:firebase_core/firebase_core.dart";
 
-import 'package:note_keeper/pages/login.dart';void main() async {
+import 'package:note_keeper/pages/login.dart';
+
+void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
   runApp(MyApp());
@@ -14,10 +16,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Note Keeper',
       theme: ThemeData.dark().copyWith(
-        primaryColor: Colors.white;
+        primaryColor: Colors.white,
       ),
       home: LoginPage(),
     );
   }
 }
-
