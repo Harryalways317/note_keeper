@@ -17,6 +17,7 @@ class MyApp extends StatelessWidget {
       title: 'Note Keeper',
       theme: ThemeData.dark().copyWith(
         primaryColor: Colors.white,
+        accentColor: Colors.white,
       ),
       home: LoginPage(),
     );

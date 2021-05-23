@@ -1,4 +1,5 @@
 import "package:flutter/material.dart";
+import 'package:note_keeper/controller/google_auth.dart';
 
 class LoginPage extends StatefulWidget {
   @override
@@ -16,13 +17,13 @@ class _LoginPageState extends State<LoginPage> {
               child: Container(
                 decoration: BoxDecoration(
                   image: DecorationImage(
-                    image: AssetImage("images/cover.png"),
+                    image: AssetImage("assets/images/cover.png"),
                   ),
                 ),
               ),
             ),
             Padding(
-              padding: const EdgeInsets.all(8.0),
+              padding: const EdgeInsets.symmetric(horizontal: 12.0),
               child: Text(
                 "Create and Manage Notes",
                 style: TextStyle(
@@ -31,14 +32,44 @@ class _LoginPageState extends State<LoginPage> {
                     fontWeight: FontWeight.bold),
               ),
             ),
-            ElevatedButton(
-              onPressed: null,
-              child: Row(
-                children: [
-                  Text("Continue With Google"),
-                ],
+            Padding(
+              padding: const EdgeInsets.symmetric(
+                horizontal: 30,
+                vertical: 15,
+              ),
+              child: ElevatedButton(
+                onPressed: () {
+                  signInWithGoogle(context);
+                },
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Image.asset(
+                      "assets/images/google.png",
+                      height: 20,
+                    ),
+                    SizedBox(
+                      width: 10,
+                    ),
+                    Text(
+                      "Continue With Google",
+                      style: TextStyle(
+                          fontSize: 17,
+                          fontFamily: "lato",
+                          fontWeight: FontWeight.bold),
+                    ),
+                  ],
+                ),
+                style: ButtonStyle(
+                    backgroundColor:
+                        MaterialStateProperty.all(Colors.pinkAccent),
+                    padding: MaterialStateProperty.all(
+                        EdgeInsets.symmetric(horizontal: 10.0))),
               ),
             ),
+            SizedBox(
+              height: 10,
+            )
           ],
         ),
       ),
