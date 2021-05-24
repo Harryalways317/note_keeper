@@ -39,6 +39,7 @@ class CustomFormField extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return TextFormField(
+      style: TextStyle(color: Colors.black),
       maxLines: maxLines,
       controller: _emailController,
       focusNode: _emailFocusNode,
@@ -47,14 +48,14 @@ class CustomFormField extends StatelessWidget {
       textCapitalization:
           isCapitalized ? TextCapitalization.words : TextCapitalization.none,
       textInputAction: _inputAction,
-      cursorColor: CustomColors.firebaseYellow,
+      cursorColor: Colors.black,
       validator: (value) => _validator(value!),
       decoration: InputDecoration(
         labelText: isLabelEnabled ? _label : null,
-        labelStyle: TextStyle(color: CustomColors.firebaseYellow),
+        labelStyle: TextStyle(color: Colors.blue[800]),
         hintText: _hint,
         hintStyle: TextStyle(
-          color: CustomColors.firebaseGrey.withOpacity(0.5),
+          color: Colors.blueGrey.withOpacity(0.5),
         ),
         errorStyle: TextStyle(
           color: Colors.redAccent,
@@ -63,14 +64,14 @@ class CustomFormField extends StatelessWidget {
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(8.0),
           borderSide: BorderSide(
-            color: CustomColors.firebaseAmber,
+            color: Colors.blue,
             width: 2,
           ),
         ),
         enabledBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(8.0),
           borderSide: BorderSide(
-            color: CustomColors.firebaseGrey.withOpacity(0.5),
+            color: Colors.blue.withOpacity(0.5),
           ),
         ),
         errorBorder: OutlineInputBorder(
