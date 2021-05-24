@@ -2,7 +2,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:note_keeper/controller/google_auth.dart';
-import 'package:note_keeper/screens/user_info_screen.dart';
+import 'package:note_keeper/screens/notes_screen.dart';
 
 class GoogleSignInButton extends StatefulWidget {
   @override
@@ -43,7 +43,7 @@ class _GoogleSignInButtonState extends State<GoogleSignInButton> {
                 if (user != null) {
                   Navigator.of(context).pushReplacement(
                     MaterialPageRoute(
-                      builder: (context) => UserInfoScreen(
+                      builder: (context) => NotesScreen(
                         user: user,
                       ),
                     ),

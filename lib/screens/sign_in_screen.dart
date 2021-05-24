@@ -13,7 +13,7 @@ class _SignInScreenState extends State<SignInScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: CustomColors.firebaseNavy,
+      backgroundColor: Colors.blueGrey[700],
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.only(
@@ -30,26 +30,35 @@ class _SignInScreenState extends State<SignInScreen> {
                   mainAxisSize: MainAxisSize.min,
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Flexible(
-                      flex: 1,
+                    Expanded(
                       child: Image.asset(
-                        'assets/firebase_logo.png',
-                        height: 160,
+                        'assets/images/cover.png',
                       ),
                     ),
+                    // Flexible(
+                    //   flex: 1,
+                    //   child: Image.asset(
+                    //     'assets/images/cover.png',
+                    //     height: 160,
+                    //   ),
+                    // ),
                     SizedBox(height: 20),
                     Text(
-                      'FlutterFire',
-                      style: TextStyle(
-                        color: CustomColors.firebaseYellow,
-                        fontSize: 40,
-                      ),
+                      'Note Keeper',
+                      style: new TextStyle(
+                          fontSize: 60.0,
+                          fontWeight: FontWeight.bold,
+                          foreground: Paint()
+                            ..shader = CustomColors.linearGradient),
                     ),
-                    Text(
-                      'Authentication',
-                      style: TextStyle(
-                        color: CustomColors.firebaseOrange,
-                        fontSize: 40,
+                    Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 12.0),
+                      child: Text(
+                        'Save your notes with ease',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 30,
+                        ),
                       ),
                     ),
                   ],
