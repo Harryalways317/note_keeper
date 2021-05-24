@@ -15,22 +15,24 @@ class AddScreen extends StatelessWidget {
         _descriptionFocusNode.unfocus();
       },
       child: Scaffold(
-        backgroundColor: CustomColors.firebaseNavy,
+        backgroundColor: Colors.white,
         appBar: AppBar(
           elevation: 0,
-          backgroundColor: CustomColors.firebaseNavy,
+          backgroundColor: Colors.green[100],
           title: AppBarTitle(),
         ),
         body: SafeArea(
-          child: Padding(
-            padding: const EdgeInsets.only(
-              left: 16.0,
-              right: 16.0,
-              bottom: 20.0,
-            ),
-            child: AddItemForm(
-              titleFocusNode: _titleFocusNode,
-              descriptionFocusNode: _descriptionFocusNode,
+          child: SingleChildScrollView(
+            child: Padding(
+              padding: const EdgeInsets.only(
+                left: 16.0,
+                right: 16.0,
+                bottom: 20.0,
+              ),
+              child: AddItemForm(
+                titleFocusNode: _titleFocusNode,
+                descriptionFocusNode: _descriptionFocusNode,
+              ),
             ),
           ),
         ),
