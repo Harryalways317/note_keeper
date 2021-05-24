@@ -22,47 +22,31 @@ class _LoginScreenState extends State<LoginScreen> {
     return GestureDetector(
       onTap: () => _uidFocusNode.unfocus(),
       child: Scaffold(
-        backgroundColor: CustomColors.firebaseNavy,
+        backgroundColor: Colors.white,
         body: SafeArea(
           child: Padding(
             padding: const EdgeInsets.only(
-              left: 16.0,
-              right: 16.0,
-              bottom: 20.0,
+              left: 0.0,
+              right: 0.0,
+              bottom: 0.0,
             ),
             child: Column(
-              mainAxisSize: MainAxisSize.max,
               children: [
-                Row(),
                 Expanded(
-                  child: Column(
-                    mainAxisSize: MainAxisSize.min,
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Flexible(
-                        flex: 1,
-                        child: Image.asset(
-                          'assets/firebase_logo.png',
-                          height: 160,
-                        ),
+                  child: Container(
+                    decoration: BoxDecoration(
+                      image: DecorationImage(
+                        image: AssetImage("assets/images/writing.png"),
                       ),
-                      SizedBox(height: 20),
-                      Text(
-                        'FlutterFire',
-                        style: TextStyle(
-                          color: CustomColors.firebaseYellow,
-                          fontSize: 40,
-                        ),
-                      ),
-                      Text(
-                        'CRUD',
-                        style: TextStyle(
-                          color: CustomColors.firebaseOrange,
-                          fontSize: 40,
-                        ),
-                      ),
-                    ],
+                    ),
                   ),
+                ),
+                Text(
+                  "Create and Manage Notes",
+                  style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 25.0,
+                      fontWeight: FontWeight.bold),
                 ),
                 FutureBuilder(
                   future: _initializeFirebase(),
