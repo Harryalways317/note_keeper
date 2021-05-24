@@ -53,11 +53,12 @@ class _LoginFormState extends State<LoginForm> {
           Padding(
             padding: EdgeInsets.only(left: 0.0, right: 0.0),
             child: Container(
-              width: double.maxFinite,
+              width: 200,
+              height: 50,
               child: ElevatedButton(
                 style: ButtonStyle(
                   backgroundColor: MaterialStateProperty.all(
-                    CustomColors.firebaseOrange,
+                    Colors.blue,
                   ),
                   shape: MaterialStateProperty.all(
                     RoundedRectangleBorder(
@@ -83,7 +84,7 @@ class _LoginFormState extends State<LoginForm> {
                   child: Text(
                     'LOGIN',
                     style: TextStyle(
-                      fontSize: 24,
+                      fontSize: 16,
                       fontWeight: FontWeight.bold,
                       color: CustomColors.firebaseGrey,
                       letterSpacing: 2,
