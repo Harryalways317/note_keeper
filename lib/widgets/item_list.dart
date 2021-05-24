@@ -24,7 +24,7 @@ class ItemList extends StatelessWidget {
 
               return Ink(
                 decoration: BoxDecoration(
-                  color: CustomColors.firebaseGrey.withOpacity(0.1),
+                  color: Colors.green.withOpacity(0.7),
                   borderRadius: BorderRadius.circular(8.0),
                 ),
                 child: ListTile(
