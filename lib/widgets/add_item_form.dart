@@ -45,7 +45,7 @@ class _AddItemFormState extends State<AddItemForm> {
                 Text(
                   'Title',
                   style: TextStyle(
-                    color: CustomColors.firebaseGrey,
+                    color: Colors.blueGrey[800],
                     fontSize: 22.0,
                     letterSpacing: 1,
                     fontWeight: FontWeight.bold,
@@ -68,7 +68,7 @@ class _AddItemFormState extends State<AddItemForm> {
                 Text(
                   'Description',
                   style: TextStyle(
-                    color: CustomColors.firebaseGrey,
+                    color: Colors.blueGrey[800],
                     fontSize: 22.0,
                     letterSpacing: 1,
                     fontWeight: FontWeight.bold,
@@ -105,7 +105,7 @@ class _AddItemFormState extends State<AddItemForm> {
                   child: ElevatedButton(
                     style: ButtonStyle(
                       backgroundColor: MaterialStateProperty.all(
-                        CustomColors.firebaseOrange,
+                        Colors.blue,
                       ),
                       shape: MaterialStateProperty.all(
                         RoundedRectangleBorder(
