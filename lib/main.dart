@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-import 'screens/sign_in_screen.dart';
+import 'package:note_keeper/screens/login_screen.dart';
 
 void main() {
   runApp(MyApp());
@@ -13,10 +12,10 @@ class MyApp extends StatelessWidget {
       title: 'FlutterFire Samples',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primarySwatch: Colors.blue,
-        brightness: Brightness.light,
+        primarySwatch: Colors.indigo,
+        brightness: Brightness.dark,
       ),
-      home: SignInScreen(),
+      home: LoginScreen(),
     );
   }
 }

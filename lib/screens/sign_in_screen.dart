@@ -1,8 +1,9 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:note_keeper/controller/google_auth.dart';
+import 'package:flutterfire_samples/res/custom_colors.dart';
+import 'package:flutterfire_samples/utils/authentication.dart';
+import 'package:flutterfire_samples/widgets/google_sign_in_button.dart';
 import 'package:note_keeper/res/custom_colors.dart';
-import 'package:note_keeper/widgets/google_sign_in_button.dart';
+import 'package:note_keeper/utils/authentication.dart';
 
 class SignInScreen extends StatefulWidget {
   @override
@@ -13,7 +14,7 @@ class _SignInScreenState extends State<SignInScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.blueGrey[700],
+      backgroundColor: CustomColors.firebaseNavy,
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.only(
@@ -30,35 +31,26 @@ class _SignInScreenState extends State<SignInScreen> {
                   mainAxisSize: MainAxisSize.min,
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Expanded(
+                    Flexible(
+                      flex: 1,
                       child: Image.asset(
-                        'assets/images/cover.png',
+                        'assets/firebase_logo.png',
+                        height: 160,
                       ),
                     ),
-                    // Flexible(
-                    //   flex: 1,
-                    //   child: Image.asset(
-                    //     'assets/images/cover.png',
-                    //     height: 160,
-                    //   ),
-                    // ),
                     SizedBox(height: 20),
                     Text(
-                      'Note Keeper',
-                      style: new TextStyle(
-                          fontSize: 60.0,
-                          fontWeight: FontWeight.bold,
-                          foreground: Paint()
-                            ..shader = CustomColors.linearGradient),
+                      'FlutterFire',
+                      style: TextStyle(
+                        color: CustomColors.firebaseYellow,
+                        fontSize: 40,
+                      ),
                     ),
-                    Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 12.0),
-                      child: Text(
-                        'Save your notes with ease',
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 30,
-                        ),
+                    Text(
+                      'Authentication',
+                      style: TextStyle(
+                        color: CustomColors.firebaseOrange,
+                        fontSize: 40,
                       ),
                     ),
                   ],

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import 'package:note_keeper/res/custom_colors.dart';
 
 class AppBarTitle extends StatelessWidget {
@@ -9,16 +8,20 @@ class AppBarTitle extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       mainAxisSize: MainAxisSize.min,
       children: [
+        Image.asset(
+          'assets/firebase_logo.png',
+          height: 20,
+        ),
         SizedBox(width: 8),
         Text(
-          'Note',
+          'FlutterFire',
           style: TextStyle(
             color: CustomColors.firebaseYellow,
             fontSize: 18,
           ),
         ),
         Text(
-          ' Keeper',
+          ' CRUD',
           style: TextStyle(
             color: CustomColors.firebaseOrange,
             fontSize: 18,
