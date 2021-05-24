@@ -17,10 +17,10 @@ class _DashboardScreenState extends State<DashboardScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: CustomColors.firebaseNavy,
+      backgroundColor: Colors.white,
       appBar: AppBar(
         elevation: 0,
-        backgroundColor: CustomColors.firebaseNavy,
+        backgroundColor: Colors.white,
         title: AppBarTitle(),
       ),
       floatingActionButton: FloatingActionButton(
@@ -31,7 +31,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
             ),
           );
         },
-        backgroundColor: CustomColors.firebaseOrange,
+        backgroundColor: Colors.blue,
         child: Icon(
           Icons.add,
           color: Colors.white,
