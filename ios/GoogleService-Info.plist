@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>754579776633-115t3gsr13rsmdq57fv0gou1j9nn929n.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.754579776633-115t3gsr13rsmdq57fv0gou1j9nn929n</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>754579776633-4ln9m3ck0pflstv8a0jqicar0sbac750.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAT29BZruNu8zVbnMuNQWzKdL8K39SZVrw</string>
+	<key>GCM_SENDER_ID</key>
+	<string>754579776633</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.harishvadaparty.noteKeeper</string>
+	<key>PROJECT_ID</key>
+	<string>note-keeper-58098</string>
+	<key>STORAGE_BUCKET</key>
+	<string>note-keeper-58098.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:754579776633:ios:c5913b7fd56d67a5d2a0a8</string>
+</dict>
+</plist>

@@ -42,10 +42,18 @@ class _LoginScreenState extends State<LoginScreen> {
                   ),
                 ),
                 Text(
-                  "Create and Manage Notes",
+                  "Create and Manage,Share Notes",
                   style: TextStyle(
-                      color: Colors.black,
-                      fontSize: 25.0,
+                      color: Colors.blue,
+                      fontSize: 20.0,
+                      fontWeight: FontWeight.bold),
+                ),
+                SizedBox(height : 10),
+                Text(
+                  "with a unique identification key",
+                  style: TextStyle(
+                      color: Colors.green,
+                      fontSize: 20.0,
                       fontWeight: FontWeight.bold),
                 ),
                 FutureBuilder(

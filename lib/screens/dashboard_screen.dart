@@ -1,6 +1,8 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:note_keeper/res/custom_colors.dart';
 import 'package:note_keeper/screens/add_screen.dart';
+import 'package:note_keeper/screens/login_screen.dart';
 import 'package:note_keeper/widgets/app_bar_title.dart';
 import 'package:note_keeper/widgets/item_list.dart';
 
@@ -22,6 +24,24 @@ class _DashboardScreenState extends State<DashboardScreen> {
         elevation: 0,
         backgroundColor: Colors.white,
         title: AppBarTitle(),
+        actions: [
+          ElevatedButton(
+            style: ButtonStyle(
+              backgroundColor: MaterialStateProperty.all<Color>(Colors.white),
+            ),
+            onPressed: () {
+              Navigator.of(context).pushReplacement(
+                MaterialPageRoute(
+                  builder: (context) => LoginScreen(),
+                ),
+              );
+            },
+            child: Icon(
+              Icons.logout,
+              color: Colors.black,
+            ),
+          )
+        ],
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
