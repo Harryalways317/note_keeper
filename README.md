@@ -3,9 +3,9 @@
 A new Flutter project.
 
 ## Getting Started
-<p align="center">
-    ![](screenshots/giffy.gif)
-</p>
+
+!["APP Demo"](screenshots/giffy.gif)
+
 
 
 This project is a starting point for a Flutter application.
