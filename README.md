@@ -3,8 +3,10 @@
 A new Flutter project.
 
 ## Getting Started
+<p align="center">
+    ![App Demo](screenshots/giffy.gif)
+</p>
 
-![](screenshots/giffy.gif)
 
 This project is a starting point for a Flutter application.
 
