@@ -15,3 +15,6 @@ flutter run
 
 
 
+## Note
+this app dosent take oauth login so notes are stored in firebase firestore so please dont keep your personal info <br>
+Made for learning purposes
