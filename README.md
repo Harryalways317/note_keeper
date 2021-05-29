@@ -1,6 +1,13 @@
-# note_keeper
+# Note Keeper
 
-A new Flutter project.
+Note Keeper lets you store notes with a unique key of your own and you can access the notes or share them using the same unique key. 🔑  <br>
+
+to run this app
+`
+cd note_keeper
+flutter bub get
+flutter run
+`
 
 ## Getting Started
 
