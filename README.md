@@ -4,7 +4,7 @@ A new Flutter project.
 
 ## Getting Started
 <p align="center">
-    ![App Demo](screenshots/giffy.gif)
+    !['App Demo'](screenshots/giffy.gif)
 </p>
 
 
