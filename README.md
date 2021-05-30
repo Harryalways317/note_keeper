@@ -16,5 +16,5 @@ Note Keeper lets you store notes with a unique key of your own and you can acces
 
 
 ## Note
-this app dosent take oauth login so notes are stored in firebase firestore so please dont keep your personal info <br>
+this app dosent encrypt the notes and  notes are stored in firebase firestore so please dont keep your personal info <br>
 Made for learning purposes
