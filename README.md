@@ -11,7 +11,7 @@ flutter run
 
 ## App Demo
 
-!["APP Demo"](screenshots/giffy.gif)
+!["APP Demo"](giffy.gif)
 
 
 
